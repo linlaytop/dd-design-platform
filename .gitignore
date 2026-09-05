@@ -1,0 +1,15 @@
+# 依赖
+node_modules/
+
+# 运行时数据（管理员新增的案例/图文/设计说明，每台服务器独立，不入库）
+data.json
+
+# 日志与系统文件
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# 环境变量（管理员密码等）
+.env
+.env.local

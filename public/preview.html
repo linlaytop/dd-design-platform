@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DD设计交易平台 | 预览版（内联样式）</title>
+  <style>
+/* ===================== 基础 ===================== */
+:root {
+  --bg: #faf8f4;
+  --bg-alt: #f3efe7;
+  --ink: #1f1b16;
+  --ink-soft: #6b6258;
+  --gold: #c9a24b;
+  --gold-deep: #a8842f;
+  --gold-soft: #f0e6cf;
+  --dark: #211d18;
+  --dark-2: #2c2720;
+  --line: #e7e0d3;
+  --radius: 16px;
+  --shadow: 0 18px 50px rgba(40, 30, 15, 0.10);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", -apple-system, system-ui, "Segoe UI", sans-serif;
+  color: var(--ink); background: var(--bg); line-height: 1.7; -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.container { width: min(1180px, 92vw); margin: 0 auto; }
+.hidden { display: none !important; }
+
+/* ===================== 按钮 ===================== */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 11px 22px; border-radius: 999px; border: 1px solid transparent;
+  font-size: 15px; font-weight: 600; cursor: pointer; transition: all .2s ease;
+  background: transparent; color: var(--ink); font-family: inherit;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.btn-lg { padding: 14px 30px; font-size: 16px; }
+.btn-block { width: 100%; }
+.btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-deep)); color: #fff; box-shadow: 0 8px 22px rgba(168,132,47,.35); }
+.btn-gold:hover { box-shadow: 0 12px 30px rgba(168,132,47,.45); }
+.btn-ghost { border-color: var(--line); color: var(--ink); background: #fff; }
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold-deep); }
+.btn-outline { border-color: rgba(255,255,255,.6); color: #fff; }
+.btn-outline:hover { background: rgba(255,255,255,.12); border-color: #fff; }
+
+/* ===================== 导航栏 ===================== */
+.navbar {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(250,248,244,.86); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner { display: flex; align-items: center; gap: 20px; height: 66px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; }
+.brand-mark {
+  width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--gold), var(--gold-deep)); color: #fff; letter-spacing: 1px;
+}
+.brand-text { font-size: 16px; }
+.nav-links { display: flex; gap: 26px; margin-left: 18px; }
+.nav-links a { font-size: 15px; color: var(--ink-soft); transition: color .2s; }
+.nav-links a:hover { color: var(--gold-deep); }
+.nav-actions { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+.user-pill {
+  background: var(--gold-soft); color: var(--gold-deep); padding: 7px 14px; border-radius: 999px;
+  font-size: 14px; font-weight: 600;
+}
+.nav-toggle { display: none; margin-left: auto; background: none; border: none; font-size: 26px; cursor: pointer; color: var(--ink); }
+.mobile-menu {
+  display: flex; flex-direction: column; gap: 4px; padding: 12px 4vw 20px;
+  border-top: 1px solid var(--line); background: var(--bg);
+}
+.mobile-menu a { padding: 12px 0; border-bottom: 1px solid var(--line); color: var(--ink-soft); }
+.mobile-actions { display: flex; gap: 10px; padding-top: 14px; flex-wrap: wrap; }
+
+/* ===================== Hero ===================== */
+.hero { position: relative; color: #fff; padding: 130px 0 90px; background-size: cover; background-position: center; background-color: #2a2113; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(120deg, rgba(20,16,10,.82), rgba(20,16,10,.55)); }
+.hero-inner { position: relative; z-index: 1; }
+.hero-eyebrow { letter-spacing: 4px; color: var(--gold); font-size: 14px; font-weight: 600; margin-bottom: 14px; }
+.hero-title { font-size: clamp(38px, 6vw, 68px); line-height: 1.1; font-weight: 800; letter-spacing: 1px; }
+.hero-sub { margin: 22px 0 32px; font-size: clamp(15px, 2vw, 19px); color: rgba(255,255,255,.86); }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 56px; max-width: 760px; }
+.hero-stats div { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 14px; padding: 16px 14px; }
+.hero-stats strong { display: block; font-size: 26px; color: var(--gold); }
+.hero-stats span { font-size: 13px; color: rgba(255,255,255,.8); }
+
+/* ===================== 区块通用 ===================== */
+.section { padding: 90px 0; }
+.section-alt { background: var(--bg-alt); }
+.section-dark { background: var(--dark); color: #fff; }
+.section-head { text-align: center; max-width: 720px; margin: 0 auto 48px; }
+.section-head.light h2 { color: #fff; }
+.kicker { letter-spacing: 3px; color: var(--gold-deep); font-size: 13px; font-weight: 700; margin-bottom: 10px; }
+.section-head h2 { font-size: clamp(26px, 4vw, 40px); font-weight: 800; letter-spacing: .5px; }
+.section-desc { color: var(--ink-soft); margin-top: 14px; font-size: 16px; }
+.section-dark .section-desc { color: rgba(255,255,255,.7); }
+
+.grid { display: grid; gap: 24px; }
+.services-grid { grid-template-columns: repeat(3, 1fr); }
+.works-grid { grid-template-columns: repeat(3, 1fr); }
+.about-grid { grid-template-columns: repeat(4, 1fr); }
+.testimonials-grid { grid-template-columns: repeat(3, 1fr); }
+.videos-grid { grid-template-columns: repeat(3, 1fr); }
+
+/* ===================== 服务卡片 ===================== */
+.service-card {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+  cursor: pointer; transition: transform .22s, box-shadow .22s; position: relative;
+}
+.service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.service-img { height: 170px; background-size: cover; background-position: center; background-color: #e7d8bd; }
+.service-body { padding: 20px 22px 24px; }
+.service-body h3 { font-size: 20px; }
+.service-body .sub { color: var(--ink-soft); font-size: 14px; margin: 4px 0 14px; }
+.service-meta { display: flex; justify-content: space-between; align-items: center; font-size: 14px; margin-top: 12px; }
+.service-meta .price { color: var(--gold-deep); font-weight: 700; }
+.service-meta .save { background: var(--gold-soft); color: var(--gold-deep); padding: 4px 10px; border-radius: 999px; font-size: 13px; }
+.service-tag { position: absolute; top: 14px; left: 14px; background: rgba(0,0,0,.45); color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 12px; backdrop-filter: blur(4px); }
+
+/* ===================== 案例卡片 ===================== */
+.filter-bar { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 36px; }
+.filter-bar button {
+  border: 1px solid var(--line); background: #fff; color: var(--ink-soft);
+  padding: 8px 18px; border-radius: 999px; cursor: pointer; font-size: 14px; font-family: inherit; transition: all .2s;
+}
+.filter-bar button.active, .filter-bar button:hover { background: var(--gold); color: #fff; border-color: var(--gold); }
+
+.work-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
+.work-card:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(40,30,15,.12); }
+.work-img { height: 200px; background-size: cover; background-position: center; background-color: #e7d8bd; position: relative; }
+.work-img-cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 16px 18px; background: linear-gradient(to top, rgba(20,16,10,.62), rgba(20,16,10,0)); }
+.wic-cat { display: block; font-size: 12px; letter-spacing: 2px; color: #ffe9b8; opacity: .92; }
+.wic-title { display: block; font-size: 18px; font-weight: 700; color: #fff; margin-top: 2px; text-shadow: 0 1px 4px rgba(0,0,0,.35); }
+.work-body { padding: 18px 20px 22px; }
+.work-body h4 { font-size: 17px; }
+.work-body .loc { color: var(--ink-soft); font-size: 14px; margin: 4px 0 12px; }
+.work-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.work-tags span { font-size: 12px; background: var(--bg-alt); color: var(--ink-soft); padding: 3px 10px; border-radius: 999px; }
+
+/* ===================== 平台优势 ===================== */
+.about-card { background: var(--dark-2); border: 1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 30px 24px; }
+.about-icon { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; background: linear-gradient(135deg, var(--gold), var(--gold-deep)); color: #fff; font-size: 22px; margin-bottom: 16px; }
+.about-card h3 { font-size: 20px; margin-bottom: 10px; }
+.about-card p { color: rgba(255,255,255,.74); font-size: 15px; }
+
+/* ===================== 客户说 ===================== */
+.quote-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 26px; }
+.quote { font-size: 16px; line-height: 1.8; }
+.quote-by { margin-top: 16px; color: var(--gold-deep); font-weight: 600; font-size: 14px; }
+
+/* ===================== 视频 ===================== */
+.video-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; position: relative; }
+.video-thumb { height: 190px; background: linear-gradient(135deg,#2c2720,#4a4034); display: grid; place-items: center; color: var(--gold); font-size: 40px; background-size: cover; background-position: center; }
+.video-body { padding: 16px 18px 18px; }
+.video-body h4 { font-size: 16px; }
+.video-del { position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,.55); color: #fff; border: none; width: 30px; height: 30px; border-radius: 8px; cursor: pointer; font-size: 16px; }
+.video-empty { grid-column: 1/-1; text-align: center; color: var(--ink-soft); padding: 40px 0; }
+
+/* ===================== 联系 ===================== */
+.contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+.contact-info h2 { font-size: clamp(26px,4vw,38px); font-weight: 800; margin: 8px 0 14px; }
+.contact-list { list-style: none; margin-top: 26px; }
+.contact-list li { padding: 14px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; }
+.contact-list span { font-size: 13px; color: var(--gold-deep); font-weight: 600; }
+.contact-form { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow); }
+.field { margin-bottom: 16px; }
+.field label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 7px; }
+.field input, .field textarea, .modal-form input {
+  width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; font-size: 15px;
+  font-family: inherit; background: var(--bg); color: var(--ink); outline: none; transition: border-color .2s;
+}
+.field input:focus, .field textarea:focus, .modal-form input:focus { border-color: var(--gold); }
+.field textarea { resize: vertical; }
+.form-hint { font-size: 13px; margin-top: 10px; min-height: 18px; }
+.form-hint.ok { color: #2e7d4f; }
+.form-hint.err { color: #c0392b; }
+
+/* ===================== 页脚 ===================== */
+.footer { background: var(--dark); color: rgba(255,255,255,.75); padding: 60px 0 0; }
+.footer-inner { display: grid; grid-template-columns: 1.4fr 2fr; gap: 40px; }
+.footer-brand p { margin-top: 14px; max-width: 320px; font-size: 14px; }
+.footer-cols { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.footer-cols h4 { color: #fff; margin-bottom: 14px; font-size: 15px; }
+.footer-cols a { display: block; padding: 6px 0; font-size: 14px; color: rgba(255,255,255,.65); }
+.footer-cols a:hover { color: var(--gold); }
+.footer-bottom { margin-top: 50px; padding: 20px 0; text-align: center; border-top: 1px solid rgba(255,255,255,.1); font-size: 13px; color: rgba(255,255,255,.5); }
+
+/* ===================== 模态框 ===================== */
+.modal { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.modal-backdrop { position: absolute; inset: 0; background: rgba(20,16,10,.55); backdrop-filter: blur(2px); }
+.modal-card {
+  position: relative; z-index: 1; width: min(420px, 100%); max-height: 90vh; overflow: auto;
+  background: #fff; border-radius: 20px; padding: 34px 30px; box-shadow: 0 30px 80px rgba(0,0,0,.3);
+  animation: pop .2s ease;
+}
+.modal-lg { width: min(760px, 100%); }
+@keyframes pop { from { transform: scale(.96); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.modal-x { position: absolute; top: 16px; right: 18px; background: none; border: none; font-size: 26px; line-height: 1; cursor: pointer; color: var(--ink-soft); }
+.modal-card h3 { font-size: 22px; margin-bottom: 20px; }
+.modal-form { display: flex; flex-direction: column; gap: 14px; }
+.code-row { display: flex; gap: 10px; }
+.code-row input { flex: 1; }
+.code-row .btn { white-space: nowrap; }
+.modal-foot { text-align: center; margin-top: 18px; font-size: 14px; color: var(--ink-soft); }
+.modal-foot a { color: var(--gold-deep); font-weight: 600; }
+
+/* 服务详情弹窗 */
+.sm-head { display: flex; gap: 18px; align-items: center; margin-bottom: 18px; }
+.sm-img { width: 120px; height: 90px; border-radius: 12px; background-size: cover; background-position: center; flex: none; background-color: #e7d8bd; }
+.sm-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin: 18px 0; }
+.sm-stats div { background: var(--bg-alt); border-radius: 10px; padding: 12px; text-align: center; }
+.sm-stats strong { display: block; color: var(--gold-deep); font-size: 18px; }
+.sm-stats span { font-size: 12px; color: var(--ink-soft); }
+.sm-projects { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 10px; }
+.sm-proj { border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+.sm-proj h5 { font-size: 15px; }
+.sm-proj p { font-size: 13px; color: var(--ink-soft); margin-top: 6px; }
+.sm-proj .save { color: var(--gold-deep); font-weight: 600; font-size: 13px; }
+
+/* ===================== Toast ===================== */
+.toast {
+  position: fixed; left: 50%; bottom: 36px; transform: translateX(-50%);
+  background: var(--dark); color: #fff; padding: 13px 24px; border-radius: 999px; z-index: 200;
+  font-size: 15px; box-shadow: 0 12px 30px rgba(0,0,0,.3); animation: pop .2s ease;
+}
+.toast.err { background: #b9342b; }
+
+/* ===================== 响应式 ===================== */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .nav-actions .btn:not(#btnLogout):not(.hidden) { display: none; }
+  .nav-toggle { display: block; }
+  .services-grid, .works-grid, .videos-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .contact-wrap { grid-template-columns: 1fr; gap: 30px; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .sm-projects { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .services-grid, .works-grid, .videos-grid, .about-grid, .insights-grid { grid-template-columns: 1fr; }
+  .hero { padding: 100px 0 70px; }
+}
+
+/* ===================== 设计干货 ===================== */
+.insights-grid { grid-template-columns: repeat(2, 1fr); }
+.insight-card {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; transition: transform .2s ease, box-shadow .2s ease;
+  display: flex; flex-direction: column;
+}
+.insight-card:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(40,30,15,.12); }
+.insight-card .ic-img { height: 168px; background-size: cover; background-position: center; background-color: #e7d8bd; }
+.insight-card .ic-body { padding: 18px 20px 22px; flex: 1; display: flex; flex-direction: column; }
+.insight-card .ic-body h3 { font-size: 18px; }
+.insight-card .ic-body p { font-size: 14px; color: var(--ink-soft); margin: 8px 0 14px; flex: 1; }
+.insight-card .ic-more { color: var(--gold-deep); font-weight: 600; font-size: 14px; }
+
+/* ===================== 首页静态关键词段落 ===================== */
+.service-seo-text {
+  max-width: 880px; margin: 0 auto 26px; padding: 16px 20px;
+  background: var(--bg-alt); border: 1px solid var(--line); border-left: 3px solid var(--gold);
+  border-radius: 12px; color: var(--ink-soft); font-size: 15px; line-height: 1.9;
+}
+.service-seo-text a { color: var(--gold-deep); font-weight: 600; }
+.service-seo-text a:hover { text-decoration: underline; }
+
+/* ===================== 分类落地页 ===================== */
+.cat-head {
+  position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.92);
+  backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
+}
+.cat-head-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.cat-nav { display: flex; gap: 22px; flex-wrap: wrap; }
+.cat-nav a { font-size: 14px; color: var(--ink-soft); font-weight: 600; }
+.cat-nav a:hover { color: var(--gold-deep); }
+
+.cat-hero {
+  position: relative; color: #fff; padding: 110px 0 80px; text-align: center;
+  background-size: cover; background-position: center; background-color: #2c2720;
+}
+.cat-hero-ov { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,16,10,.55), rgba(20,16,10,.78)); }
+.cat-hero-in { position: relative; }
+.cat-hero h1 { font-size: clamp(30px, 5vw, 52px); margin: 6px 0 10px; letter-spacing: 2px; }
+.cat-sub { font-size: 17px; opacity: .9; }
+.cat-meta { margin-top: 18px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cat-meta .price, .cat-meta .save {
+  background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.25);
+  padding: 6px 16px; border-radius: 999px; font-size: 14px;
+}
+
+.cat-intro { max-width: 860px; margin: 0 auto; font-size: 16px; line-height: 2; color: var(--ink); }
+.cat-intro p { margin-bottom: 16px; }
+
+.proc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.proc-step { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 22px; }
+.proc-no { font-size: 26px; font-weight: 800; color: var(--gold); letter-spacing: 1px; }
+.proc-step h4 { margin: 10px 0 8px; font-size: 18px; }
+.proc-step p { font-size: 14px; color: var(--ink-soft); line-height: 1.8; }
+
+.faq-list { max-width: 860px; margin: 0 auto; display: grid; gap: 14px; }
+.faq-item { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; }
+.faq-item h4 { font-size: 16px; margin-bottom: 8px; color: var(--gold-deep); }
+.faq-item p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; }
+
+.cat-cta { text-align: center; }
+.cat-cta h2 { color: #fff; font-size: 28px; margin-bottom: 12px; }
+.cat-cta p { color: rgba(255,255,255,.8); margin-bottom: 22px; }
+
+.cat-links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.cat-links a {
+  border: 1px solid var(--line); border-radius: 999px; padding: 9px 18px;
+  font-size: 14px; font-weight: 600; color: var(--ink); background: #fff;
+}
+.cat-links a:hover { border-color: var(--gold); color: var(--gold-deep); }
+
+.work-img-cap {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 16px 14px;
+  background: linear-gradient(180deg, transparent, rgba(20,16,10,.72));
+  display: flex; flex-direction: column; gap: 2px;
+}
+.work-card { position: relative; }
+.wic-cat { font-size: 12px; color: #f0e6cf; opacity: .9; }
+.wic-title { font-size: 16px; color: #fff; font-weight: 700; }
+
+@media (max-width: 900px) {
+  .cat-nav { display: none; }
+  .proc-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .proc-grid { grid-template-columns: 1fr; }
+}
+  </style>
+</head>
+<body>
+  <!-- ===================== 导航栏 ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">DD</span>
+        <span class="brand-text">设计交易平台</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">服务类目</a>
+        <a href="#works">精选案例</a>
+        <a href="#about">平台优势</a>
+        <a href="#testimonials">客户说</a>
+        <a href="#videos">视频号</a>
+        <a href="#contact">联系预约</a>
+      </nav>
+
+      <div class="nav-actions" id="navActions">
+        <a class="btn btn-ghost" href="/article/nongcun-bieshu-sheji-bikeng">设计干货</a>
+        <button class="btn btn-ghost" data-action="admin-login">管理员登录</button>
+        <button class="btn btn-gold hidden" data-action="upload" id="btnUpload">上传视频</button>
+        <span class="user-pill hidden" id="userPill"></span>
+        <button class="btn btn-ghost hidden" id="btnLogout" data-action="logout">退出</button>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">&#9776;</button>
+    </div>
+    <div class="mobile-menu hidden" id="mobileMenu">
+      <a href="#services">服务类目</a>
+      <a href="#works">精选案例</a>
+      <a href="#about">平台优势</a>
+      <a href="#testimonials">客户说</a>
+      <a href="#videos">视频号</a>
+      <a href="#contact">联系预约</a>
+      <div class="mobile-actions">
+        <a class="btn btn-ghost" href="/article/nongcun-bieshu-sheji-bikeng">设计干货</a>
+        <button class="btn btn-ghost" data-action="admin-login">管理员登录</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===================== Hero ===================== -->
+    <section class="hero" style="background-image:url('images/Luxury_boutique_hotel_lobby_in_2026-08-06T14-17-21.png'),linear-gradient(135deg,#2a2113,#3d3425)">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">共享顶级设计师资源</p>
+        <h1 class="hero-title">让好设计<br />不再贵得离谱</h1>
+        <p class="hero-sub">酒店 &middot; 民宿 &middot; 住宅 &middot; 商业空间 &middot; 软装 &middot; AI 智能设计<br />平台直连资深设计师，平均为您节省 40% 设计费用</p>
+        <div class="hero-cta">
+          <a class="btn btn-gold btn-lg" href="#contact">获取设计方案</a>
+          <a class="btn btn-outline btn-lg" href="/nongcun-bieshu-xiaoguotu">看农村别墅效果图</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>5,800+</strong><span>累计服务项目</span></div>
+          <div><strong>&yen;2.7 亿</strong><span>累计为客户节省</span></div>
+          <div><strong>98%</strong><span>客户满意度</span></div>
+          <div><strong>11 类</strong><span>全品类设计服务</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 服务类目 ===================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">SERVICES</p>
+          <h2>十一大设计服务类目</h2>
+          <p class="section-desc">从概念到落地，覆盖空间设计的每一个环节。点击任意类目查看真实案例。</p>
+        </div>
+        <p class="service-seo-text">我们提供 <a href="/category/hotel">酒店设计</a>、<a href="/category/minsu">民宿设计</a>、<a href="/category/residential">别墅与住宅设计</a>、<a href="/category/homestead">农村自建房设计</a>、<a href="/category/commercial">商业空间设计</a>、<a href="/category/softdecor">软装设计</a>、<a href="/category/ai-design">AI智能设计</a>、<a href="/category/architecture">建筑设计</a>、<a href="/category/garden">园林设计</a>、<a href="/category/restaurant">餐饮设计</a> 与 <a href="/category/lighting">灯光设计</a> 十一大类服务，平台直连资深设计师，让酒店、民宿、别墅、自建房与商业空间的设计更专业、更省心。</p>
+        <div class="grid services-grid" id="servicesGrid">
+          <!-- 静态渲染：11 大服务类目（带 AI 生成真实封面图） -->
+          <div class="service-card" data-service="hotel"><span class="service-tag">01</span><div class="service-img" style="background-image:url('images/Luxury_boutique_hotel_lobby_in_2026-08-06T14-17-21.png'),linear-gradient(135deg,#f6eed9,#d6b271);background-size:cover;background-position:center"></div><div class="service-body"><h3>酒店设计</h3><div class="sub">精品酒店 &middot; 连锁酒店 &middot; 度假酒店</div><div class="service-meta"><span class="price">&yen;50万-200万</span><span class="save">平均节省 &yen;85万</span></div></div></div>
+          <div class="service-card" data-service="minsu"><span class="service-tag">02</span><div class="service-img" style="background-image:url('images/Beautiful_countryside_guesthou_2026-08-06T14-17-42.png'),linear-gradient(135deg,#f6eed9,#c9a86a);background-size:cover;background-position:center"></div><div class="service-body"><h3>民宿设计</h3><div class="sub">精品民宿 &middot; 乡村民宿 &middot; 主题民宿</div><div class="service-meta"><span class="price">&yen;10万-50万</span><span class="save">平均节省 &yen;22万</span></div></div></div>
+          <div class="service-card" data-service="residential"><span class="service-tag">03</span><div class="service-img" style="background-image:url('images/Modern_luxury_villa_living_roo_2026-08-06T14-17-22.png'),linear-gradient(135deg,#f6eed9,#b8893f);background-size:cover;background-position:center"></div><div class="service-body"><h3>住宅设计</h3><div class="sub">大平层 &middot; 别墅 &middot; 复式</div><div class="service-meta"><span class="price">&yen;5万-80万</span><span class="save">平均节省 &yen;45万</span></div></div></div>
+          <div class="service-card" data-service="commercial"><span class="service-tag">04</span><div class="service-img" style="background-image:url('images/Trendy_commercial_retail_space_2026-08-06T14-17-22.png'),linear-gradient(135deg,#f6eed9,#caa15c);background-size:cover;background-position:center"></div><div class="service-body"><h3>商业空间</h3><div class="sub">餐厅 &middot; 办公室 &middot; 零售店</div><div class="service-meta"><span class="price">&yen;15万-120万</span><span class="save">平均节省 &yen;48万</span></div></div></div>
+          <div class="service-card" data-service="softdecor"><span class="service-tag">05</span><div class="service-img" style="background-image:url('images/Elegant_soft_decoration_interi_2026-08-06T14-17-22.png'),linear-gradient(135deg,#f6eed9,#d8c08a);background-size:cover;background-position:center"></div><div class="service-body"><h3>软装配饰</h3><div class="sub">家具选配 &middot; 艺术品 &middot; 灯光方案</div><div class="service-meta"><span class="price">&yen;5万-200万</span><span class="save">平均节省 &yen;28万</span></div></div></div>
+          <div class="service-card" data-service="ai-design"><span class="service-tag">06</span><div class="service-img" style="background-image:url('images/Futuristic_AI_smart_home_desig_2026-08-06T14-17-22.png'),linear-gradient(135deg,#f6eed9,#cdb27a);background-size:cover;background-position:center"></div><div class="service-body"><h3>AI智能设计</h3><div class="sub">AI辅助 &middot; 快速出图 &middot; 方案预览</div><div class="service-meta"><span class="price">&yen;2万-8万</span><span class="save">平均节省 &yen;15万</span></div></div></div>
+          <div class="service-card" data-service="architecture"><span class="service-tag">07</span><div class="service-img" style="background-image:url('images/Modern_architectural_building__2026-08-06T14-18-23.png'),linear-gradient(135deg,#f6eed9,#bfa46a);background-size:cover;background-position:center"></div><div class="service-body"><h3>建筑设计</h3><div class="sub">住宅建筑 &middot; 商业建筑 &middot; 公共建筑</div><div class="service-meta"><span class="price">&yen;50万-500万</span><span class="save">平均节省 &yen;240万</span></div></div></div>
+          <div class="service-card" data-service="garden"><span class="service-tag">08</span><div class="service-img" style="background-image:url('images/Beautiful_landscape_garden_des_2026-08-06T14-18-23.png'),linear-gradient(135deg,#f6eed9,#9fae6a);background-size:cover;background-position:center"></div><div class="service-body"><h3>园林设计</h3><div class="sub">私家花园 &middot; 景观规划 &middot; 庭院设计</div><div class="service-meta"><span class="price">&yen;15万-200万</span><span class="save">平均节省 &yen;60万</span></div></div></div>
+          <div class="service-card" data-service="restaurant"><span class="service-tag">09</span><div class="service-img" style="background-image:url('images/Elegant_fine_dining_restaurant_2026-08-06T14-18-23.png'),linear-gradient(135deg,#f6eed9,#d09a5a);background-size:cover;background-position:center"></div><div class="service-body"><h3>餐饮设计</h3><div class="sub">高端餐厅 &middot; 连锁品牌 &middot; 咖啡茶饮</div><div class="service-meta"><span class="price">&yen;18万-85万</span><span class="save">平均节省 &yen;38万</span></div></div></div>
+          <div class="service-card" data-service="lighting"><span class="service-tag">10</span><div class="service-img" style="background-image:url('images/Professional_architectural_lig_2026-08-06T14-18-23.png'),linear-gradient(135deg,#f6eed9,#e0c47a);background-size:cover;background-position:center"></div><div class="service-body"><h3>灯光设计</h3><div class="sub">室内照明 &middot; 景观亮化 &middot; 商业灯光</div><div class="service-meta"><span class="price">&yen;15万-80万</span><span class="save">平均节省 &yen;28万</span></div></div></div>
+          <div class="service-card" data-service="homestead"><span class="service-tag">11</span><div class="service-img" style="background-image:url('images/Beautiful_rural_countryside_vi_2026-08-06T14-18-23.png'),linear-gradient(135deg,#f6eed9,#c9a86a);background-size:cover;background-position:center"></div><div class="service-body"><h3>自建房设计</h3><div class="sub">农村别墅 &middot; 自建房 &middot; 乡村住宅</div><div class="service-meta"><span class="price">&yen;12万-24万</span><span class="save">平均节省 &yen;12万</span></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 精选案例 ===================== -->
+    <section class="section section-alt" id="works">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">WORKS</p>
+          <h2>精选设计案例</h2>
+          <p class="section-desc">来自全国各地的真实交付项目，按类目筛选。</p>
+        </div>
+        <div class="filter-bar" id="worksFilter"></div>
+        <div class="grid works-grid" id="worksGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 平台优势 ===================== -->
+    <section class="section section-dark" id="about">
+      <div class="container">
+        <div class="section-head light">
+          <p class="kicker">WHY DD</p>
+          <h2>为什么选 DD 设计交易平台</h2>
+        </div>
+        <div class="grid about-grid">
+          <div class="about-card">
+            <div class="about-icon">&yen;</div>
+            <h3>真省钱</h3>
+            <p>平台直连设计师，砍掉中间层加价，设计费平均节省 40%，单项目最高省 &yen;320 万。</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">&#9733;</div>
+            <h3>真专业</h3>
+            <p>入驻设计师均拥有 8 年以上一线项目经验，服务过五星酒店、上市房企与连锁品牌。</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">&#9889;</div>
+            <h3>真高效</h3>
+            <p>AI 辅助出图 48 小时看见方案，全流程在线协同，平均工期比传统模式缩短 30%。</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">&#10003;</div>
+            <h3>真保障</h3>
+            <p>合同线上签、节点验收、资金托管，交付不满意可申诉，权益全程受平台保护。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 客户说 ===================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">TESTIMONIALS</p>
+          <h2>客户怎么说</h2>
+        </div>
+        <div class="grid testimonials-grid">
+          <div class="quote-card">
+            <p class="quote">&ldquo;洱海边的精品酒店，张设计团队把白族元素用得很克制，开业三个月入住率就到 92%。&rdquo;</p>
+            <p class="quote-by">&mdash; 云南大理 &middot; 云境度假酒店投资人</p>
+          </div>
+          <div class="quote-card">
+            <p class="quote">&ldquo;比传统设计公司报价少了 160 万，效果反而更好。平台的节点验收机制让人很放心。&rdquo;</p>
+            <p class="quote-by">&mdash; 北京朝阳 &middot; 都市商务酒店创始人</p>
+          </div>
+          <div class="quote-card">
+            <p class="quote">&ldquo;AI 出图真的两天就看到了客厅方案，改了三版定稿，沟通成本降了一大半。&rdquo;</p>
+            <p class="quote-by">&mdash; 上海徐汇 &middot; 大平层业主</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 设计干货 ===================== -->
+    <section class="section section-alt" id="insights">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">DESIGN INSIGHTS</p>
+          <h2>设计干货 &middot; 原创避坑指南</h2>
+          <p class="section-desc">酒店、民宿、住宅、自建房设计的实战经验，帮您少走弯路、控制预算。</p>
+        </div>
+        <div class="grid insights-grid">
+          <a class="insight-card" href="/article/nongcun-bieshu-sheji-bikeng">
+            <div class="ic-img" style="background-image:url('images/Beautiful_rural_countryside_vi_2026-08-06T14-18-23.png'),linear-gradient(135deg,#c9a24b,#a8842f)"></div>
+            <div class="ic-body"><h3>农村别墅设计避坑指南</h3><p>自建房最常见的 6 个误区，附可落地的避坑清单。</p><span class="ic-more">阅读全文 &rarr;</span></div>
+          </a>
+          <a class="insight-card" href="/article/jiudian-sheji-yusuan">
+            <div class="ic-img" style="background-image:url('images/Luxury_boutique_hotel_lobby_in_2026-08-06T14-17-21.png'),linear-gradient(135deg,#8B6914,#5C4510)"></div>
+            <div class="ic-body"><h3>酒店设计如何控制预算</h3><p>投资人控制成本的 5 条铁律，省下的都是净利润。</p><span class="ic-more">阅读全文 &rarr;</span></div>
+          </a>
+          <a class="insight-card" href="/article/minsu-sheji-ruzhu-lv">
+            <div class="ic-img" style="background-image:url('images/Beautiful_countryside_guesthou_2026-08-06T14-17-42.png'),linear-gradient(135deg,#6B8E23,#556B2F)"></div>
+            <div class="ic-body"><h3>民宿设计提升入住率</h3><p>从&ldquo;好看&rdquo;到&ldquo;好住&rdquo;的 5 个设计要点。</p><span class="ic-more">阅读全文 &rarr;</span></div>
+          </a>
+          <a class="insight-card" href="/article/xiaohuxing-xianshe-jiqiao">
+            <div class="ic-img" style="background-image:url('images/Modern_luxury_villa_living_roo_2026-08-06T14-17-22.png'),linear-gradient(135deg,#708090,#4A5568)"></div>
+            <div class="ic-body"><h3>小户型设计显大技巧</h3><p>80㎡ 住出 120㎡ 的 7 个实用方法。</p><span class="ic-more">阅读全文 &rarr;</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 视频号 ===================== -->
+    <section class="section section-alt" id="videos">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">VIDEOS</p>
+          <h2>案例视频号</h2>
+          <p class="section-desc">看真实空间如何从无到有。管理员可上传与维护视频。</p>
+        </div>
+        <div class="grid videos-grid" id="videosGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 联系预约 ===================== -->
+    <section class="section" id="contact">
+      <div class="container contact-wrap">
+        <div class="contact-info">
+          <p class="kicker">CONTACT</p>
+          <h2>预约您的专属设计顾问</h2>
+          <p class="section-desc">留下联系方式，平台将在 1 个工作日内为您匹配对应类目的资深设计师。</p>
+          <ul class="contact-list">
+            <li><span>客服热线</span>400-888-0000</li>
+            <li><span>商务合作</span>bd@dd-design.com</li>
+            <li><span>总部地址</span>上海市黄浦区外滩源 1 号</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="field">
+            <label>姓名 *</label>
+            <input type="text" name="name" required placeholder="您的称呼" />
+          </div>
+          <div class="field">
+            <label>电话 *</label>
+            <input type="tel" name="phone" required placeholder="11 位手机号" pattern="1\d{10}" />
+          </div>
+          <div class="field">
+            <label>需求说明 *</label>
+            <textarea name="message" rows="4" required placeholder="例如：大理 2800㎡ 精品度假酒店，希望新中式风格"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-lg">提交预约</button>
+          <p class="form-hint" id="contactHint"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 页脚 ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">DD</span>
+        <p>DD 设计交易平台 &mdash;&mdash; 共享顶级设计师资源，让好设计触手可及。</p>
+      </div>
+      <div class="footer-cols">
+        <div><h4>设计服务</h4><a href="/category/hotel">酒店设计</a><a href="/category/minsu">民宿设计</a><a href="/category/residential">别墅与住宅设计</a><a href="/category/homestead">自建房设计</a><a href="/nongcun-bieshu-xiaoguotu">农村别墅效果图</a><a href="/category/commercial">商业空间设计</a><a href="/category/softdecor">软装设计</a></div>
+        <div><h4>更多服务</h4><a href="/category/ai-design">展厅设计</a><a href="/category/architecture">建筑设计</a><a href="/category/garden">园林设计</a><a href="/category/restaurant">餐饮设计</a><a href="/category/lighting">灯光设计</a></div>
+        <div><h4>设计干货</h4><a href="/article/nongcun-bieshu-sheji-bikeng">农村别墅避坑</a><a href="/article/jiudian-sheji-yusuan">酒店预算控制</a><a href="/article/minsu-sheji-ruzhu-lv">民宿入住率</a><a href="/article/xiaohuxing-xianshe-jiqiao">小户型显大</a></div>
+        <div><h4>关于</h4><a href="#about">平台优势</a><a href="#testimonials">客户说</a><a href="#contact">联系我们</a></div>
+        <div><h4>法务</h4><a href="#">服务协议</a><a href="#">隐私政策</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 DD 设计交易平台 &middot; 本站为演示项目，数据仅存于本地</div>
+  </footer>
+
+  <!-- toast -->
+  <div class="toast" id="toast" style="display:none"></div>
+</body>
+</html>
