@@ -1,0 +1,387 @@
+[
+  {
+    "id": "hotel", "slug": "hotel", "title": "酒店设计", "subtitle": "精品酒店 · 连锁酒店 · 度假酒店",
+    "description": "从概念到落地，为酒店投资人提供全流程设计服务。共享顶级酒店设计师资源，节省50%-70%设计费用。",
+    "heroImage": "images/hotel-hero.svg",
+    "priceRange": "¥50万-200万", "avgSavings": "平均节省 ¥85万",
+    "stats": [{"value": "320+", "label": "完成项目"}, {"value": "¥2,700万", "label": "累计节省"}, {"value": "99%", "label": "满意度"}, {"value": "45天", "label": "平均工期"}],
+    "projects": [
+      {"id": "hotel-1", "title": "云境·精品度假酒店", "location": "云南大理", "area": "2,800㎡", "style": "新中式", "budget": "设计费 ¥120万", "savings": "节省 ¥85万", "designer": "张明远", "duration": "60天", "description": "坐落于洱海之畔的精品度假酒店，融合白族建筑元素与现代设计语言。", "image": "images/hotel.svg", "tags": ["新中式", "度假", "禅意", "洱海"]},
+      {"id": "hotel-2", "title": "都市·商务精品酒店", "location": "北京朝阳", "area": "5,600㎡", "style": "现代商务", "budget": "设计费 ¥200万", "savings": "节省 ¥160万", "designer": "李建华", "duration": "90天", "description": "位于CBD核心区的商务酒店，以简洁高效的设计理念打造舒适空间。", "image": "images/hotel.svg", "tags": ["商务", "现代", "高效", "CBD"]},
+      {"id": "hotel-3", "title": "海棠湾·度假酒店", "location": "海南三亚", "area": "8,200㎡", "style": "热带度假", "budget": "设计费 ¥350万", "savings": "节省 ¥230万", "designer": "王海洋", "duration": "120天", "description": "面朝大海的热带度假酒店，将自然元素与现代奢华完美融合。", "image": "images/hotel.svg", "tags": ["海景", "热带", "奢华", "度假"]},
+      {"id": "hotel-4", "title": "竹林·温泉酒店", "location": "四川峨眉", "area": "3,500㎡", "style": "禅意东方", "budget": "设计费 ¥150万", "savings": "节省 ¥95万", "designer": "陈雅文", "duration": "75天", "description": "隐于竹林深处的温泉酒店，以东方禅意为设计灵魂。", "image": "images/hotel.svg", "tags": ["禅意", "温泉", "竹林", "东方"]},
+      {"id": "hotel-5", "title": "星河·城市精品酒店", "location": "上海浦东", "area": "4,200㎡", "style": "轻奢现代", "budget": "设计费 ¥180万", "savings": "节省 ¥120万", "designer": "赵晨曦", "duration": "80天", "description": "位于陆家嘴金融区的城市精品酒店，以星空为设计主题。", "image": "images/hotel.svg", "tags": ["轻奢", "现代", "城市", "未来感"]},
+      {"id": "hotel-6", "title": "古镇·文化主题酒店", "location": "江苏周庄", "area": "1,800㎡", "style": "江南水乡", "budget": "设计费 ¥80万", "savings": "节省 ¥55万", "designer": "林婉清", "duration": "50天", "description": "坐落于千年古镇的文化主题酒店，将江南水乡诗意融入细节。", "image": "images/hotel.svg", "tags": ["江南", "文化", "古镇", "水乡"]}
+    ],
+    "seo": {
+      "metaTitle": "酒店设计公司_精品酒店装修设计_度假酒店设计案例 | DD设计交易平台",
+      "metaKeywords": "酒店设计,精品酒店设计,度假酒店设计,连锁酒店设计,酒店装修设计公司,酒店设计方案,酒店设计案例",
+      "metaDescription": "DD设计交易平台提供精品酒店、连锁酒店、度假酒店全程设计服务，共享顶级酒店设计师，平均节省50%-70%设计费。查看真实酒店设计案例与报价。",
+      "intro": [
+        "酒店设计是决定投资回报与入住率的核心环节。DD设计交易平台直连拥有8年以上一线项目经验的酒店设计师，覆盖精品酒店、连锁酒店、度假酒店、文化主题酒店等全品类，从概念策划、空间规划到软装灯光一体化落地。",
+        "我们坚持「平台直连设计师」模式，砍掉传统设计公司的层层加价，酒店设计费平均节省50%-70%。每一个项目都配备节点验收与资金托管，让投资更透明、落地更可控。"
+      ],
+      "process": [
+        {"step": "01", "title": "投资定位", "desc": "结合区位、客群与预算，明确酒店定位与风格方向，输出可行性建议。"},
+        {"step": "02", "title": "概念方案", "desc": "空间动线、公区与客房平面方案，配套效果图让投资人提前看见成果。"},
+        {"step": "03", "title": "深化设计", "desc": "机电、灯光、软装、导视全套施工图，对接施工与供应链。"},
+        {"step": "04", "title": "落地把控", "desc": "节点验收、样板间复核、现场巡检，确保设计效果真实还原。"}
+      ],
+      "faq": [
+        {"q": "酒店设计一般需要多少预算？", "a": "视规模与定位而定，精品酒店设计费通常在50万-200万区间，平台通过直连设计师平均可节省85万左右。"},
+        {"q": "从设计到开业大概多久？", "a": "设计周期约45-120天，我们提供节点验收与施工配合，帮助项目更快进入运营。"},
+        {"q": "是否包含软装和灯光设计？", "a": "是的，酒店项目可提供硬装、软装、灯光一体化设计，保证空间调性统一。"}
+      ]
+    }
+  },
+  {
+    "id": "minsu", "slug": "minsu", "title": "民宿设计", "subtitle": "精品民宿 · 乡村民宿 · 主题民宿",
+    "description": "打造独具特色的民宿空间，提升入住体验和复购率。深度理解运营逻辑，让设计为经营赋能。",
+    "heroImage": "images/minsu-hero.svg",
+    "priceRange": "¥10万-50万", "avgSavings": "平均节省 ¥22万",
+    "stats": [{"value": "580+", "label": "完成项目"}, {"value": "¥1,280万", "label": "累计节省"}, {"value": "98%", "label": "满意度"}, {"value": "30天", "label": "平均工期"}],
+    "projects": [
+      {"id": "minsu-1", "title": "山海间·海景民宿", "location": "浙江舟山", "area": "680㎡", "style": "现代海洋", "budget": "设计费 ¥35万", "savings": "节省 ¥22万", "designer": "周海燕", "duration": "35天", "description": "面朝大海的精品民宿，将海洋元素巧妙融入空间设计。", "image": "images/minsu.svg", "tags": ["海景", "现代", "轻奢", "舟山"]},
+      {"id": "minsu-2", "title": "茶境·山间民宿", "location": "福建武夷山", "area": "1,200㎡", "style": "茶文化", "budget": "设计费 ¥48万", "savings": "节省 ¥38万", "designer": "吴茗轩", "duration": "45天", "description": "隐于茶山之间的精品民宿，以茶文化为设计主线。", "image": "images/minsu.svg", "tags": ["茶文化", "禅意", "自然", "山间"]},
+      {"id": "minsu-3", "title": "稻田·乡村民宿", "location": "广西桂林", "area": "450㎡", "style": "田园自然", "budget": "设计费 ¥18万", "savings": "节省 ¥12万", "designer": "黄田野", "duration": "25天", "description": "坐落于稻田之间的乡村民宿，还原田园生活的本真。", "image": "images/minsu.svg", "tags": ["田园", "乡村", "自然", "稻田"]},
+      {"id": "minsu-4", "title": "星空·露营民宿", "location": "内蒙古呼伦贝尔", "area": "320㎡", "style": "野奢露营", "budget": "设计费 ¥25万", "savings": "节省 ¥15万", "designer": "马天骄", "duration": "20天", "description": "草原上的星空露营民宿，将野奢概念与蒙古族文化结合。", "image": "images/minsu.svg", "tags": ["野奢", "露营", "草原", "星空"]},
+      {"id": "minsu-5", "title": "竹隐·森林民宿", "location": "浙江安吉", "area": "560㎡", "style": "竹文化", "budget": "设计费 ¥30万", "savings": "节省 ¥20万", "designer": "林竹青", "duration": "30天", "description": "藏于竹海深处的森林民宿，以竹为主要设计元素。", "image": "images/minsu.svg", "tags": ["竹文化", "森林", "自然", "安吉"]},
+      {"id": "minsu-6", "title": "渔村·海边民宿", "location": "福建霞浦", "area": "380㎡", "style": "渔村风情", "budget": "设计费 ¥22万", "savings": "节省 ¥14万", "designer": "陈海风", "duration": "28天", "description": "位于百年渔村的海边民宿，保留渔村原始风貌。", "image": "images/minsu.svg", "tags": ["渔村", "海边", "风情", "霞浦"]}
+    ],
+    "seo": {
+      "metaTitle": "民宿设计_精品民宿装修设计_乡村民宿设计公司 | DD设计交易平台",
+      "metaKeywords": "民宿设计,民宿装修设计,精品民宿设计,乡村民宿设计,民宿设计公司,民宿改造设计",
+      "metaDescription": "DD设计交易平台提供精品民宿、乡村民宿、主题民宿全案设计，深度理解运营逻辑，平均节省22万设计费。查看真实民宿设计案例。",
+      "intro": [
+        "民宿设计不只是好看的房子，更是复购率与口碑的来源。DD平台聚集擅长在地文化表达的民宿设计师，把茶山、竹海、稻田、海岸的在地气质转化为可经营的特色空间。",
+        "我们从运营视角做设计：动线如何提升服务效率、公区如何制造打卡点、客房如何提升溢价。平台直连设计师，民宿设计费平均节省10万-38万。"
+      ],
+      "process": [
+        {"step": "01", "title": "选址研判", "desc": "结合周边资源与客群，判断民宿定位与主题方向。"},
+        {"step": "02", "title": "主题方案", "desc": "在地文化提取+空间叙事，形成独具辨识度的设计方案。"},
+        {"step": "03", "title": "软装落地", "desc": "家具、布艺、器物一体化选配，控制预算花在刀刃上。"},
+        {"step": "04", "title": "开业陪跑", "desc": "拍摄动线、打卡点建议，助力开业即出片。"}
+      ],
+      "faq": [
+        {"q": "小体量民宿值得做设计吗？", "a": "非常值得。300-500㎡的乡村民宿通过精准设计往往能显著提升房价与入住率，投入回收快。"},
+        {"q": "民宿设计周期要多久？", "a": "常规20-45天可完成方案到软装落地清单，赶开业节点也能压缩排期。"},
+        {"q": "能否保留原有建筑风貌？", "a": "可以。我们擅长在老宅、渔村、古镇中做微改造，保留风貌的同时提升舒适度。"}
+      ]
+    }
+  },
+  {
+    "id": "residential", "slug": "residential", "title": "住宅设计", "subtitle": "大平层 · 别墅 · 复式",
+    "description": "高端住宅空间设计，融合业主生活方式与审美偏好。告别千篇一律，打造专属于您的理想居所。",
+    "heroImage": "images/villa-hero.svg",
+    "priceRange": "¥5万-80万", "avgSavings": "平均节省 ¥45万",
+    "stats": [{"value": "1,240+", "label": "完成项目"}, {"value": "¥5,580万", "label": "累计节省"}, {"value": "98%", "label": "满意度"}, {"value": "35天", "label": "平均工期"}],
+    "projects": [
+      {"id": "res-1", "title": "悦境·浦东大平层", "location": "上海浦东", "area": "380㎡", "style": "现代简约", "budget": "设计费 ¥65万", "savings": "节省 ¥45万", "designer": "张艺轩", "duration": "40天", "description": "俯瞰浦江的大平层住宅，以极简主义为设计哲学。", "image": "images/villa.svg", "tags": ["现代简约", "大平层", "定制", "浦东"]},
+      {"id": "res-2", "title": "山居·独栋别墅", "location": "杭州西湖", "area": "650㎡", "style": "新中式", "budget": "设计费 ¥95万", "savings": "节省 ¥72万", "designer": "王雅琴", "duration": "55天", "description": "西湖畔的独栋别墅，将传统中式美学与现代生活融合。", "image": "images/villa.svg", "tags": ["新中式", "别墅", "西湖", "诗意"]},
+      {"id": "res-3", "title": "云端·复式公寓", "location": "深圳南山", "area": "280㎡", "style": "轻奢现代", "budget": "设计费 ¥48万", "savings": "节省 ¥35万", "designer": "刘晨光", "duration": "35天", "description": "位于城市之巅的复式公寓，以轻奢现代风格打造居所。", "image": "images/villa.svg", "tags": ["轻奢", "复式", "现代", "城市"]},
+      {"id": "res-4", "title": "花园·联排别墅", "location": "苏州园区", "area": "420㎡", "style": "法式轻奢", "budget": "设计费 ¥72万", "savings": "节省 ¥55万", "designer": "陈雅婷", "duration": "45天", "description": "苏州园区的联排别墅，以法式轻奢风格打造优雅家居。", "image": "images/villa.svg", "tags": ["法式", "轻奢", "花园", "别墅"]},
+      {"id": "res-5", "title": "湖畔·大平层", "location": "武汉东湖", "area": "320㎡", "style": "意式极简", "budget": "设计费 ¥55万", "savings": "节省 ¥40万", "designer": "赵明远", "duration": "38天", "description": "东湖之畔的大平层住宅，以意大利极简主义为灵感。", "image": "images/villa.svg", "tags": ["意式", "极简", "湖景", "大平层"]},
+      {"id": "res-6", "title": "御景·顶层复式", "location": "广州天河", "area": "450㎡", "style": "现代奢华", "budget": "设计费 ¥88万", "savings": "节省 ¥65万", "designer": "林雅诗", "duration": "50天", "description": "城市之巅的顶层复式，打造360度全景视野居住体验。", "image": "images/villa.svg", "tags": ["奢华", "顶层", "全景", "复式"]}
+    ],
+    "seo": {
+      "metaTitle": "住宅设计_别墅设计_大平层装修设计公司 | DD设计交易平台",
+      "metaKeywords": "住宅设计,别墅设计,大平层设计,高端住宅设计,私宅设计,复式设计,家装设计公司",
+      "metaDescription": "DD设计交易平台提供别墅、大平层、复式等高端住宅全案设计，融合业主生活方式与审美，平均节省45万设计费。查看真实住宅设计案例。",
+      "intro": [
+        "住宅是生活的容器。DD平台的住宅设计师不做千篇一律的模板，而是从您的家庭成员、作息习惯与审美偏好出发，定制真正属于您的居所——无论是大平层的极简克制，还是别墅的新中式诗意。",
+        "我们提供从平面优化、收纳体系、灯光氛围到全屋软装的一体化设计，平台直连资深设计师，住宅设计费平均节省45万，交付不满意可申诉。"
+      ],
+      "process": [
+        {"step": "01", "title": "生活方式访谈", "desc": "了解家庭结构、收纳习惯与审美偏好，定义设计目标。"},
+        {"step": "02", "title": "平面重构", "desc": "优化动线与空间关系，提升采光、收纳与通透感。"},
+        {"step": "03", "title": "效果与软装", "desc": "全景效果图+主材软装清单，所见即所得。"},
+        {"step": "04", "title": "落地验收", "desc": "节点验收与现场配合，确保落地还原度。"}
+      ],
+      "faq": [
+        {"q": "大平层和别墅设计侧重点有何不同？", "a": "大平层更强调通透与动线效率，别墅则重视庭院、楼层关系与私密性，我们会针对性设计。"},
+        {"q": "住宅设计包含软装吗？", "a": "可包含。我们提供硬装+软装全案，也可只做硬装设计，灵活匹配预算。"},
+        {"q": "设计费大概多少？", "a": "住宅设计费通常5万-80万，视面积与风格复杂度，平台平均可节省45万。"}
+      ]
+    }
+  },
+  {
+    "id": "commercial", "slug": "commercial", "title": "商业空间", "subtitle": "餐厅 · 办公室 · 零售店",
+    "description": "商业空间设计直接影响营业额，我们用数据驱动设计决策，帮助商业空间实现最大化价值。",
+    "heroImage": "images/commercial-hero.svg",
+    "priceRange": "¥20万-150万", "avgSavings": "平均节省 ¥68万",
+    "stats": [{"value": "890+", "label": "完成项目"}, {"value": "¥6,050万", "label": "累计节省"}, {"value": "97%", "label": "满意度"}, {"value": "40天", "label": "平均工期"}],
+    "projects": [
+      {"id": "com-1", "title": "墨·高端日料餐厅", "location": "上海静安", "area": "450㎡", "style": "日式侘寂", "budget": "设计费 ¥65万", "savings": "节省 ¥48万", "designer": "田中一郎", "duration": "40天", "description": "隐于闹市的高端日料餐厅，以侘寂美学传达食物本真。", "image": "images/commercial.svg", "tags": ["日式", "侘寂", "高端", "日料"]},
+      {"id": "com-2", "title": "创想·科技公司总部", "location": "北京海淀", "area": "2,200㎡", "style": "科技未来", "budget": "设计费 ¥120万", "savings": "节省 ¥85万", "designer": "张科技", "duration": "60天", "description": "互联网科技公司总部，以开放协作为核心理念。", "image": "images/commercial.svg", "tags": ["科技", "开放", "协作", "未来"]},
+      {"id": "com-3", "title": "花间·网红咖啡店", "location": "成都太古里", "area": "180㎡", "style": "ins风", "budget": "设计费 ¥28万", "savings": "节省 ¥18万", "designer": "李花间", "duration": "25天", "description": "太古里的网红咖啡店，以花艺为设计主题打造打卡空间。", "image": "images/commercial.svg", "tags": ["网红", "咖啡", "花艺", "打卡"]},
+      {"id": "com-4", "title": "品·连锁火锅店", "location": "重庆渝中", "area": "800㎡", "style": "国潮", "budget": "设计费 ¥55万", "savings": "节省 ¥38万", "designer": "陈国潮", "duration": "35天", "description": "连锁火锅品牌旗舰店，将重庆码头文化融入现代餐饮。", "image": "images/commercial.svg", "tags": ["国潮", "火锅", "连锁", "文化"]},
+      {"id": "com-5", "title": "奢·高端美容会所", "location": "广州天河", "area": "600㎡", "style": "法式轻奢", "budget": "设计费 ¥75万", "savings": "节省 ¥52万", "designer": "王美琳", "duration": "45天", "description": "高端美容会所，以法式轻奢风格营造尊贵私密空间。", "image": "images/commercial.svg", "tags": ["轻奢", "美容", "法式", "私密"]},
+      {"id": "com-6", "title": "潮·买手店", "location": "深圳华侨城", "area": "350㎡", "style": "工业潮流", "budget": "设计费 ¥42万", "savings": "节省 ¥30万", "designer": "赵潮流", "duration": "30天", "description": "华侨城创意园的潮流买手店，融入街头艺术元素。", "image": "images/commercial.svg", "tags": ["工业", "潮流", "买手", "街头"]}
+    ],
+    "seo": {
+      "metaTitle": "商业空间设计_办公室设计_零售店设计公司 | DD设计交易平台",
+      "metaKeywords": "商业空间设计,办公室设计,零售店设计,商铺设计,商业空间设计公司,连锁店设计",
+      "metaDescription": "DD设计交易平台提供餐厅、办公室、零售店等商业空间设计，用数据驱动设计决策提升营业额，平均节省68万设计费。查看商业空间案例。",
+      "intro": [
+        "商业空间设计直接影响坪效与营业额。DD平台的商业设计团队以运营数据为导向，从客流动线、停留时长到打卡传播，让每一平方米都为经营服务。",
+        "无论是连锁餐饮的标准化形象，还是买手店的个性表达，我们都提供从品牌定位到空间落地的全案，平台直连设计师，商业空间设计费平均节省68万。"
+      ],
+      "process": [
+        {"step": "01", "title": "经营诊断", "desc": "分析客群、品类与竞品，明确空间要解决的经营问题。"},
+        {"step": "02", "title": "平面与动线", "desc": "优化客流、服务与后场动线，提升坪效与体验。"},
+        {"step": "03", "title": "品牌空间化", "desc": "将品牌调性转化为材质、灯光与符号语言。"},
+        {"step": "04", "title": "落地与陈列", "desc": "施工配合+开业陈列建议，确保效果到位。"}
+      ],
+      "faq": [
+        {"q": "连锁品牌如何保证门店统一？", "a": "我们提供标准化设计模块与物料清单，新店可快速复制，同时保留本地微调空间。"},
+        {"q": "商业空间设计能提升营业额吗？", "a": "合理的动线与打卡点能显著提升停留时长与传播，间接带动营业额，这是我们设计的核心目标。"},
+        {"q": "设计周期一般多久？", "a": "单店通常25-60天，总部型项目视面积与复杂度而定。"}
+      ]
+    }
+  },
+  {
+    "id": "softdecor", "slug": "softdecor", "title": "软装配饰", "subtitle": "家具选配 · 艺术品 · 灯光方案",
+    "description": "专业软装设计团队，为硬装完成后的空间注入灵魂。精准把控预算，每一分钱都花在刀刃上。",
+    "heroImage": "images/soft-hero.svg",
+    "priceRange": "¥3万-30万", "avgSavings": "平均节省 ¥12万",
+    "stats": [{"value": "760+", "label": "完成项目"}, {"value": "¥912万", "label": "累计节省"}, {"value": "99%", "label": "满意度"}, {"value": "20天", "label": "平均工期"}],
+    "projects": [
+      {"id": "soft-1", "title": "雅居·大平层软装", "location": "上海徐汇", "area": "320㎡", "style": "现代轻奢", "budget": "软装费 ¥85万", "savings": "节省 ¥28万", "designer": "陈雅居", "duration": "25天", "description": "大平层住宅全案软装设计，从家具到艺术品一站式配置。", "image": "images/soft.svg", "tags": ["轻奢", "全案", "艺术品", "定制"]},
+      {"id": "soft-2", "title": "墨韵·中式软装", "location": "北京东城", "area": "450㎡", "style": "新中式", "budget": "软装费 ¥120万", "savings": "节省 ¥45万", "designer": "王墨韵", "duration": "30天", "description": "四合院改造后的新中式软装，融合传统文人雅趣。", "image": "images/soft.svg", "tags": ["新中式", "文人", "雅趣", "四合院"]},
+      {"id": "soft-3", "title": "光影·灯光方案", "location": "深圳福田", "area": "280㎡", "style": "现代极简", "budget": "灯光费 ¥35万", "savings": "节省 ¥12万", "designer": "刘光影", "duration": "15天", "description": "复式住宅专业灯光设计方案，用光影塑造空间层次。", "image": "images/soft.svg", "tags": ["灯光", "氛围", "场景", "极简"]},
+      {"id": "soft-4", "title": "花艺·空间花植", "location": "杭州西湖", "area": "200㎡", "style": "自然生态", "budget": "花植费 ¥15万", "savings": "节省 ¥6万", "designer": "花小姐", "duration": "10天", "description": "高端住宅空间花植设计，将自然生态引入室内。", "image": "images/soft.svg", "tags": ["花植", "自然", "生态", "绿色"]},
+      {"id": "soft-5", "title": "艺境·艺术品配置", "location": "上海黄浦", "area": "500㎡", "style": "当代艺术", "budget": "艺术品费 ¥200万", "savings": "节省 ¥65万", "designer": "赵艺境", "duration": "20天", "description": "高端别墅艺术品配置方案，为空间注入文化底蕴。", "image": "images/soft.svg", "tags": ["艺术品", "当代", "收藏", "文化"]},
+      {"id": "soft-6", "title": "织梦·窗帘布艺", "location": "广州越秀", "area": "350㎡", "style": "欧式古典", "budget": "布艺费 ¥25万", "savings": "节省 ¥9万", "designer": "林织梦", "duration": "12天", "description": "别墅窗帘布艺全案设计，打造优雅的空间帷幕。", "image": "images/soft.svg", "tags": ["窗帘", "布艺", "欧式", "定制"]}
+    ],
+    "seo": {
+      "metaTitle": "软装设计_软装配饰_全案软装设计公司 | DD设计交易平台",
+      "metaKeywords": "软装设计,软装配饰,全案软装,软装设计公司,软装搭配,家居软装",
+      "metaDescription": "DD设计交易平台提供全案软装、家具选配、艺术品与灯光方案，为硬装空间注入灵魂，平均节省12万软装费。查看软装设计案例。",
+      "intro": [
+        "硬装决定骨架，软装决定气质。DD平台的软装设计师擅长在硬装完成后，用家具、布艺、艺术品与灯光为空间注入灵魂，让家真正有温度。",
+        "我们坚持精准把控预算，拒绝过度堆砌。全案软装平均节省12万，并提供可落地的采购清单，让效果与预算都可控。"
+      ],
+      "process": [
+        {"step": "01", "title": "气质定义", "desc": "结合硬装风格与业主偏好，定义空间软装调性。"},
+        {"step": "02", "title": "方案与清单", "desc": "家具、布艺、艺术品、灯光一体化方案与采购清单。"},
+        {"step": "03", "title": "采购落地", "desc": "对接供应链，把控材质与交期，控制预算。"},
+        {"step": "04", "title": "进场陈列", "desc": "现场摆场与细节调试，完成最终呈现。"}
+      ],
+      "faq": [
+        {"q": "只做软装不改动硬装可以吗？", "a": "完全可以。软装是硬装完成后最高性价比的提质方式，无需大动干戈。"},
+        {"q": "软装预算怎么控制？", "a": "我们先定总预算再分配，优先保障大件与灯光，平均可为客户节省12万。"},
+        {"q": "包含灯光设计吗？", "a": "包含。灯光是软装氛围的关键，我们提供分层照明与场景方案。"}
+      ]
+    }
+  },
+  {
+    "id": "ai-design", "slug": "ai-design", "title": "展厅设计", "subtitle": "AI辅助 · 快速出图 · 方案预览",
+    "description": "结合最新AI技术，48小时内生成初步设计方案，让您在正式开工前就能看到理想空间效果。",
+    "heroImage": "images/hero-bg.svg",
+    "priceRange": "¥2万-15万", "avgSavings": "平均节省 ¥8万",
+    "stats": [{"value": "430+", "label": "完成项目"}, {"value": "¥344万", "label": "累计节省"}, {"value": "96%", "label": "满意度"}, {"value": "48h", "label": "出图速度"}],
+    "projects": [
+      {"id": "ai-1", "title": "AI·客厅空间重塑", "location": "线上服务", "area": "60㎡", "style": "多风格可选", "budget": "设计费 ¥2万", "savings": "节省 ¥8万", "designer": "AI + 设计师", "duration": "48小时", "description": "AI快速生成客厅设计方案，支持多种风格切换。", "image": "images/villa.svg", "tags": ["AI", "快速", "多风格", "客厅"]},
+      {"id": "ai-2", "title": "AI·全屋风格定制", "location": "线上服务", "area": "120㎡", "style": "个性化定制", "budget": "设计费 ¥5万", "savings": "节省 ¥15万", "designer": "AI + 设计师", "duration": "3天", "description": "AI分析生活习惯和审美偏好，生成专属全屋方案。", "image": "images/soft.svg", "tags": ["AI", "全屋", "定制", "个性化"]},
+      {"id": "ai-3", "title": "AI·商铺快速出图", "location": "线上服务", "area": "200㎡", "style": "商业定制", "budget": "设计费 ¥3万", "savings": "节省 ¥12万", "designer": "AI + 设计师", "duration": "48小时", "description": "为商铺快速生成多套设计方案，助商家快速决策。", "image": "images/commercial.svg", "tags": ["AI", "商铺", "快速", "多方案"]},
+      {"id": "ai-4", "title": "AI·旧房改造预览", "location": "线上服务", "area": "90㎡", "style": "焕新改造", "budget": "设计费 ¥2.5万", "savings": "节省 ¥10万", "designer": "AI + 设计师", "duration": "48小时", "description": "上传旧房照片，AI智能分析并生成改造预览。", "image": "images/villa.svg", "tags": ["AI", "旧房", "改造", "预览"]},
+      {"id": "ai-5", "title": "AI·民宿风格探索", "location": "线上服务", "area": "500㎡", "style": "风格探索", "budget": "设计费 ¥8万", "savings": "节省 ¥20万", "designer": "AI + 设计师", "duration": "5天", "description": "为民宿投资人提供AI风格探索，降低决策风险。", "image": "images/minsu.svg", "tags": ["AI", "民宿", "风格", "探索"]},
+      {"id": "ai-6", "title": "AI·VR全景漫游", "location": "线上服务", "area": "不限", "style": "沉浸体验", "budget": "设计费 ¥6万", "savings": "节省 ¥15万", "designer": "AI + 设计师", "duration": "7天", "description": "基于AI方案制作VR全景漫游，身临其境感受空间。", "image": "images/hero-bg.svg", "tags": ["AI", "VR", "全景", "沉浸"]}
+    ],
+    "seo": {
+      "metaTitle": "AI智能设计_人工智能室内设计_快速出图 | DD设计交易平台",
+      "metaKeywords": "AI设计,AI智能设计,AI室内设计,AI装修设计,快速出图,AI效果图",
+      "metaDescription": "DD设计交易平台结合AI技术，48小时生成初步室内设计方案与效果图，支持多风格切换与VR漫游，平均节省8万设计费。",
+      "intro": [
+        "AI不是替代设计师，而是放大设计师的效率。DD平台的AI智能设计服务，能在48小时内为您生成初步空间方案与多风格效果图，让您在正式开工前就看见理想居所。",
+        "我们采用「AI出图 + 设计师把关」的模式：AI快速探索方向，资深设计师校正落地可行性与审美，既快又稳，设计费平均节省8万。"
+      ],
+      "process": [
+        {"step": "01", "title": "需求采集", "desc": "上传户型与偏好，AI分析生活习惯与审美。"},
+        {"step": "02", "title": "AI出图", "desc": "48小时内生成多套风格方案与效果图。"},
+        {"step": "03", "title": "设计师把关", "desc": "资深设计师校正可落地性与细节。"},
+        {"step": "04", "title": "深化交付", "desc": "确认方向后进入正式深化设计。"}
+      ],
+      "faq": [
+        {"q": "AI设计能直接施工吗？", "a": "AI出图用于方向探索与预览，正式施工前由设计师深化并出具施工图，确保可行。"},
+        {"q": "出图真的只要48小时吗？", "a": "初步方案与效果图通常48小时内可交付，复杂项目会适当延长。"},
+        {"q": "AI设计适合哪些场景？", "a": "特别适合旧房改造预览、商铺快速决策、民宿风格探索等需要快速看效果的场景。"}
+      ]
+    }
+  },
+  {
+    "id": "architecture", "slug": "architecture", "title": "建筑设计", "subtitle": "住宅建筑 · 商业建筑 · 公共建筑",
+    "description": "从建筑规划到外立面设计，为开发商和业主提供全流程建筑设计服务。共享顶级建筑设计师资源。",
+    "heroImage": "images/hotel-hero.svg",
+    "priceRange": "¥80万-500万", "avgSavings": "平均节省 ¥120万",
+    "stats": [{"value": "260+", "label": "完成项目"}, {"value": "¥3,120万", "label": "累计节省"}, {"value": "97%", "label": "满意度"}, {"value": "90天", "label": "平均工期"}],
+    "projects": [
+      {"id": "arch-1", "title": "云顶·山地别墅群", "location": "浙江莫干山", "area": "12,000㎡", "style": "现代山地", "budget": "设计费 ¥280万", "savings": "节省 ¥180万", "designer": "张建筑", "duration": "120天", "description": "莫干山高端别墅群，融合山地地形与现代建筑语言。", "image": "images/villa.svg", "tags": ["山地", "别墅群", "现代", "生态"]},
+      {"id": "arch-2", "title": "星河·商业综合体", "location": "深圳前海", "area": "45,000㎡", "style": "未来主义", "budget": "设计费 ¥500万", "savings": "节省 ¥320万", "designer": "李未来", "duration": "180天", "description": "前海自贸区商业综合体，以未来主义打造城市地标。", "image": "images/hotel.svg", "tags": ["商业", "综合体", "未来", "地标"]},
+      {"id": "arch-3", "title": "水岸·文化中心", "location": "苏州金鸡湖", "area": "8,500㎡", "style": "新中式", "budget": "设计费 ¥200万", "savings": "节省 ¥130万", "designer": "王文化", "duration": "100天", "description": "金鸡湖畔文化中心，将苏州园林意境融入公共建筑。", "image": "images/minsu.svg", "tags": ["文化", "公共", "新中式", "水景"]},
+      {"id": "arch-4", "title": "云端·超高层住宅", "location": "上海浦东", "area": "28,000㎡", "style": "国际现代", "budget": "设计费 ¥450万", "savings": "节省 ¥280万", "designer": "赵高远", "duration": "150天", "description": "浦东核心区超高层住宅，打造城市天际线新高度。", "image": "images/hotel.svg", "tags": ["超高层", "住宅", "国际", "天际线"]},
+      {"id": "arch-5", "title": "竹境·度假酒店建筑", "location": "云南西双版纳", "area": "15,000㎡", "style": "热带生态", "budget": "设计费 ¥350万", "savings": "节省 ¥220万", "designer": "林热带", "duration": "130天", "description": "西双版纳热带雨林度假酒店，以竹构技术打造低碳生态。", "image": "images/minsu.svg", "tags": ["热带", "生态", "竹构", "度假"]},
+      {"id": "arch-6", "title": "学府·教育综合体", "location": "北京海淀", "area": "20,000㎡", "style": "学院派现代", "budget": "设计费 ¥380万", "savings": "节省 ¥240万", "designer": "陈学院", "duration": "140天", "description": "海淀区国际学校，融合教育理念与建筑美学。", "image": "images/hotel.svg", "tags": ["教育", "学校", "现代", "人文"]}
+    ],
+    "seo": {
+      "metaTitle": "建筑设计公司_建筑规划设计_外立面设计 | DD设计交易平台",
+      "metaKeywords": "建筑设计,建筑规划设计,建筑设计公司,外立面设计,商业建筑设计,住宅建筑设计",
+      "metaDescription": "DD设计交易平台提供住宅、商业、公共建筑全流程设计，从规划到外立面一体落地，共享顶级建筑设计师，平均节省120万设计费。",
+      "intro": [
+        "建筑是城市的骨架，也是资产价值的起点。DD平台的建筑设计服务覆盖住宅、商业、公共建筑，从规划指标研判、体量推敲到外立面与景观一体化，为开发商与业主提供全流程支持。",
+        "我们共享一线建筑设计师资源，平台直连模式让建筑设计费平均节省120万，并提供报建配合与节点把控，降低开发与落地风险。"
+      ],
+      "process": [
+        {"step": "01", "title": "规划研判", "desc": "研判用地条件与指标，明确规划与产品方向。"},
+        {"step": "02", "title": "方案设计", "desc": "体量、流线、外立面一体化方案设计。"},
+        {"step": "03", "title": "扩初深化", "desc": "结构、机电、立面材质深化，对接报建。"},
+        {"step": "04", "title": "落地配合", "desc": "施工图配合与现场服务，保障落地。"}
+      ],
+      "faq": [
+        {"q": "建筑设计包含报建配合吗？", "a": "可提供报建图纸与配合建议，具体深度可按项目所在地要求定制。"},
+        {"q": "建筑设计与室内设计如何衔接？", "a": "我们提倡建筑与室内一体化，避免割裂，确保空间体验连贯。"},
+        {"q": "建筑设计费大概多少？", "a": "通常80万-500万，视规模与复杂度，平台平均可节省120万。"}
+      ]
+    }
+  },
+  {
+    "id": "garden", "slug": "garden", "title": "园林设计", "subtitle": "私家花园 · 景观规划 · 庭院设计",
+    "description": "从私家庭院到大型景观规划，打造人与自然和谐共处的户外空间。专业园林团队让土地绽放生命力。",
+    "heroImage": "images/minsu-hero.svg",
+    "priceRange": "¥15万-200万", "avgSavings": "平均节省 ¥45万",
+    "stats": [{"value": "380+", "label": "完成项目"}, {"value": "¥1,710万", "label": "累计节省"}, {"value": "98%", "label": "满意度"}, {"value": "60天", "label": "平均工期"}],
+    "projects": [
+      {"id": "garden-1", "title": "枯山水·禅意庭院", "location": "杭州西溪", "area": "800㎡", "style": "日式禅意", "budget": "设计费 ¥45万", "savings": "节省 ¥30万", "designer": "松本和", "duration": "45天", "description": "西溪湿地旁的私家庭院，以枯山水营造禅意空间。", "image": "images/minsu.svg", "tags": ["禅意", "枯山水", "日式", "庭院"]},
+      {"id": "garden-2", "title": "花境·英式花园", "location": "上海松江", "area": "1,200㎡", "style": "英式自然", "budget": "设计费 ¥65万", "savings": "节省 ¥42万", "designer": "花小姐", "duration": "50天", "description": "别墅区英式自然花园，四季花境轮换如画。", "image": "images/minsu.svg", "tags": ["英式", "花园", "四季", "自然"]},
+      {"id": "garden-3", "title": "山水间·中式园林", "location": "苏州吴中", "area": "2,500㎡", "style": "苏式园林", "budget": "设计费 ¥120万", "savings": "节省 ¥78万", "designer": "王园林", "duration": "80天", "description": "传承苏州园林精髓的私家园林，移步换景。", "image": "images/minsu.svg", "tags": ["苏式", "园林", "山水", "古典"]},
+      {"id": "garden-4", "title": "绿洲·屋顶花园", "location": "深圳南山", "area": "500㎡", "style": "现代生态", "budget": "设计费 ¥28万", "savings": "节省 ¥18万", "designer": "刘绿洲", "duration": "30天", "description": "城市高层屋顶花园，将绿色生态引入都市天空。", "image": "images/minsu.svg", "tags": ["屋顶", "生态", "城市", "空中"]},
+      {"id": "garden-5", "title": "溪谷·度假村景观", "location": "四川青城山", "area": "50,000㎡", "style": "自然野趣", "budget": "设计费 ¥200万", "savings": "节省 ¥130万", "designer": "赵溪谷", "duration": "100天", "description": "青城山度假村整体景观规划，保留原始植被。", "image": "images/minsu.svg", "tags": ["度假村", "自然", "野趣", "山林"]},
+      {"id": "garden-6", "title": "水韵·滨水景观", "location": "武汉东湖", "area": "8,000㎡", "style": "滨水生态", "budget": "设计费 ¥95万", "savings": "节省 ¥60万", "designer": "陈水韵", "duration": "70天", "description": "东湖滨水住宅区景观，最大化利用湖景资源。", "image": "images/minsu.svg", "tags": ["滨水", "生态", "湖景", "社区"]}
+    ],
+    "seo": {
+      "metaTitle": "园林设计_庭院设计_私家花园景观设计公司 | DD设计交易平台",
+      "metaKeywords": "园林设计,庭院设计,私家花园设计,景观设计,景观规划,花园设计公司",
+      "metaDescription": "DD设计交易平台提供私家庭院、景观规划、屋顶花园等园林设计，让土地绽放生命力，平均节省45万设计费。查看园林设计案例。",
+      "intro": [
+        "园林是建筑的延伸，也是生活与自然的和解。DD平台的园林设计团队，从私家庭院、屋顶花园到大型景观规划，用植物、水景与地形营造可呼吸的户外空间。",
+        "我们强调生态与低维护，让花园四季有景又不至成为负担。园林设计费平均节省45万，并提供植物配置与养护建议。"
+      ],
+      "process": [
+        {"step": "01", "title": "场地研判", "desc": "分析光照、地形、土壤与视野，明确花园性格。"},
+        {"step": "02", "title": "方案设计", "desc": "空间分区、水景与植配一体化方案。"},
+        {"step": "03", "title": "施工图", "desc": "硬质、灌溉、照明施工图与物料清单。"},
+        {"step": "04", "title": "落地养护", "desc": "现场配合与植物养护建议，保障成活。"}
+      ],
+      "faq": [
+        {"q": "小庭院也能做园林设计吗？", "a": "可以。即使是几十平米的天井，也能通过植配与借景做出意境。"},
+        {"q": "园林设计后期维护麻烦吗？", "a": "我们优先选用适地植物与低维护配置，并提供养护手册，降低后期成本。"},
+        {"q": "屋顶花园防水怎么处理？", "a": "方案中会明确防水与荷载要求，并对接专业施工方。"}
+      ]
+    }
+  },
+  {
+    "id": "restaurant", "slug": "restaurant", "title": "餐饮设计", "subtitle": "高端餐厅 · 连锁品牌 · 咖啡茶饮",
+    "description": "专注餐饮空间设计，深度理解餐饮运营逻辑。从品牌定位到空间落地，打造高坪效就餐环境。",
+    "heroImage": "images/commercial-hero.svg",
+    "priceRange": "¥10万-100万", "avgSavings": "平均节省 ¥35万",
+    "stats": [{"value": "650+", "label": "完成项目"}, {"value": "¥2,275万", "label": "累计节省"}, {"value": "98%", "label": "满意度"}, {"value": "35天", "label": "平均工期"}],
+    "projects": [
+      {"id": "rest-1", "title": "炉·创意日料", "location": "上海新天地", "area": "380㎡", "style": "日式侘寂", "budget": "设计费 ¥55万", "savings": "节省 ¥38万", "designer": "田中设计", "duration": "40天", "description": "新天地高端日料，以侘寂美学打造沉浸式体验。", "image": "images/commercial.svg", "tags": ["日料", "侘寂", "高端", "打卡"]},
+      {"id": "rest-2", "title": "火凤凰·川菜连锁", "location": "全国连锁", "area": "250㎡/店", "style": "国潮川味", "budget": "设计费 ¥30万/店", "savings": "节省 ¥20万/店", "designer": "赵国潮", "duration": "25天", "description": "川菜连锁全国统一形象，融合国潮与川蜀文化。", "image": "images/commercial.svg", "tags": ["连锁", "国潮", "川菜", "品牌"]},
+      {"id": "rest-3", "title": "云端·空中餐厅", "location": "广州塔", "area": "600㎡", "style": "未来科技", "budget": "设计费 ¥85万", "savings": "节省 ¥55万", "designer": "林未来", "duration": "50天", "description": "广州塔高层空中餐厅，打造360度全景用餐体验。", "image": "images/hotel.svg", "tags": ["空中", "全景", "科技", "高端"]},
+      {"id": "rest-4", "title": "茶颜·新式茶饮", "location": "长沙五一广场", "area": "120㎡", "style": "新中式", "budget": "设计费 ¥18万", "savings": "节省 ¥12万", "designer": "陈茶颜", "duration": "20天", "description": "新式茶饮旗舰店，融合国风美学与年轻潮流。", "image": "images/commercial.svg", "tags": ["茶饮", "新中式", "网红", "社交"]},
+      {"id": "rest-5", "title": "牧场·西餐厅", "location": "北京三里屯", "area": "450㎡", "style": "工业复古", "budget": "设计费 ¥62万", "savings": "节省 ¥40万", "designer": "马工业", "duration": "35天", "description": "三里屯工业风西餐厅，裸露管道与暖色灯光交织。", "image": "images/commercial.svg", "tags": ["工业风", "西餐", "复古", "氛围"]},
+      {"id": "rest-6", "title": "渔港·海鲜酒楼", "location": "厦门环岛路", "area": "800㎡", "style": "海洋主题", "budget": "设计费 ¥75万", "savings": "节省 ¥48万", "designer": "周海洋", "duration": "45天", "description": "环岛路海景海鲜酒楼，将渔港文化与现代餐饮结合。", "image": "images/hotel.svg", "tags": ["海鲜", "海洋", "主题", "海景"]}
+    ],
+    "seo": {
+      "metaTitle": "餐饮设计_餐厅设计_连锁餐饮空间设计公司 | DD设计交易平台",
+      "metaKeywords": "餐饮设计,餐厅设计,餐饮空间设计,连锁餐饮设计,奶茶店设计,火锅店设计",
+      "metaDescription": "DD设计交易平台提供高端餐厅、连锁品牌、咖啡茶饮等餐饮空间设计，深度理解运营逻辑提升坪效，平均节省35万设计费。",
+      "intro": [
+        "餐饮是空间设计里最讲究「坪效」的品类。DD平台的餐饮设计团队既懂美学，更懂翻台率、动线与打卡传播，从品牌定位到空间落地一体化交付。",
+        "无论是一间高端日料的侘寂克制，还是连锁茶饮的国潮活力，我们都能量身打造。餐饮设计费平均节省35万，并提供标准化模块支撑连锁复制。"
+      ],
+      "process": [
+        {"step": "01", "title": "品牌与品类", "desc": "明确品类、客群与价格带，定义空间调性。"},
+        {"step": "02", "title": "厨房与前场", "desc": "后厨动线与前场体验协同设计，提升效率。"},
+        {"step": "03", "title": "打卡点营造", "desc": "制造传播点与记忆点，放大社媒价值。"},
+        {"step": "04", "title": "连锁复制", "desc": "沉淀标准化模块，支撑多店快速落地。"}
+      ],
+      "faq": [
+        {"q": "餐饮设计如何影响翻台率？", "a": "合理的座席组合与动线能提升翻台与客单价，这是我们设计的重点。"},
+        {"q": "连锁餐饮如何快速开店？", "a": "我们提供标准化设计模块与物料清单，新店可快速复制落地。"},
+        {"q": "设计包含厨房规划吗？", "a": "包含。厨房动线是餐饮设计的核心，我们与运营方共同推敲。"}
+      ]
+    }
+  },
+  {
+    "id": "lighting", "slug": "lighting", "title": "灯光设计", "subtitle": "室内照明 · 景观亮化 · 商业灯光",
+    "description": "专业灯光设计团队，用光影塑造空间灵魂。从住宅氛围照明到商业空间灯光营销，恰到好处。",
+    "heroImage": "images/soft-hero.svg",
+    "priceRange": "¥5万-80万", "avgSavings": "平均节省 ¥18万",
+    "stats": [{"value": "420+", "label": "完成项目"}, {"value": "¥756万", "label": "累计节省"}, {"value": "99%", "label": "满意度"}, {"value": "20天", "label": "平均工期"}],
+    "projects": [
+      {"id": "light-1", "title": "星河·别墅全屋灯光", "location": "上海松江", "area": "600㎡", "style": "分层照明", "budget": "设计费 ¥35万", "savings": "节省 ¥22万", "designer": "光之设计", "duration": "20天", "description": "别墅全屋灯光系统，分层照明+智能场景控制。", "image": "images/soft.svg", "tags": ["别墅", "分层", "智能", "场景"]},
+      {"id": "light-2", "title": "夜·商业街亮化", "location": "成都宽窄巷子", "area": "5,000㎡", "style": "文化亮化", "budget": "设计费 ¥80万", "savings": "节省 ¥52万", "designer": "赵夜景", "duration": "35天", "description": "宽窄巷子商业街夜景亮化，用灯光讲述成都故事。", "image": "images/hotel.svg", "tags": ["商业街", "亮化", "文化", "夜景"]},
+      {"id": "light-3", "title": "光影·美术馆照明", "location": "北京798", "area": "2,000㎡", "style": "艺术照明", "budget": "设计费 ¥45万", "savings": "节省 ¥28万", "designer": "林光影", "duration": "25天", "description": "798美术馆专业照明，精准控制色温与照度。", "image": "images/villa.svg", "tags": ["美术馆", "艺术", "专业", "色温"]},
+      {"id": "light-4", "title": "暖·餐厅氛围灯光", "location": "杭州西湖", "area": "350㎡", "style": "氛围营造", "budget": "设计费 ¥15万", "savings": "节省 ¥9万", "designer": "陈暖光", "duration": "15天", "description": "西湖畔高端餐厅灯光，用暖色营造浪漫氛围。", "image": "images/commercial.svg", "tags": ["餐厅", "氛围", "暖光", "浪漫"]},
+      {"id": "light-5", "title": "璀璨·酒店大堂灯光", "location": "广州天河", "area": "1,500㎡", "style": "奢华照明", "budget": "设计费 ¥60万", "savings": "节省 ¥38万", "designer": "王璀璨", "duration": "28天", "description": "五星级酒店大堂灯光，水晶灯阵与间接照明结合。", "image": "images/hotel.svg", "tags": ["酒店", "大堂", "奢华", "水晶"]},
+      {"id": "light-6", "title": "智·办公空间照明", "location": "深圳科技园", "area": "3,000㎡", "style": "健康照明", "budget": "设计费 ¥40万", "savings": "节省 ¥25万", "designer": "刘智光", "duration": "22天", "description": "科技企业总部办公照明，采用人因照明提升效率。", "image": "images/villa.svg", "tags": ["办公", "健康", "智能", "人因"]}
+    ],
+    "seo": {
+      "metaTitle": "灯光设计_照明设计_夜景亮化设计公司 | DD设计交易平台",
+      "metaKeywords": "灯光设计,照明设计,灯光设计公司,夜景亮化,商业灯光,智能照明设计",
+      "metaDescription": "DD设计交易平台提供室内照明、景观亮化、商业灯光等专业灯光设计，用光影塑造空间灵魂，平均节省18万设计费。查看灯光设计案例。",
+      "intro": [
+        "灯光是空间的第二层建筑。DD平台的灯光设计团队，从住宅的分层氛围照明，到商业空间的灯光营销、城市夜景亮化，用色温、照度与场景塑造空间的灵魂。",
+        "我们坚持「恰到好处」：既不浪费能耗，也不辜负空间。灯光设计费平均节省18万，并提供智能场景与控制系统建议。"
+      ],
+      "process": [
+        {"step": "01", "title": "需求分层", "desc": "区分基础照明、重点照明与氛围照明需求。"},
+        {"step": "02", "title": "方案设计", "desc": "灯具选型、布点与色温方案一体化设计。"},
+        {"step": "03", "title": "智能场景", "desc": "面向使用场景设计调光与模式控制。"},
+        {"step": "04", "title": "现场调试", "desc": "安装后逐区调试，确保效果到位。"}
+      ],
+      "faq": [
+        {"q": "灯光设计能自己做吗？", "a": "简单空间可以，但商业与豪宅建议专业设计，色温与层次直接决定质感。"},
+        {"q": "是否支持智能控制？", "a": "支持。我们提供场景化智能照明方案，匹配主流控制系统。"},
+        {"q": "灯光设计何时介入最好？", "a": "越早越好，最好在硬装阶段同步，避免后期线管与吊顶冲突。"}
+      ]
+    }
+  },
+  {
+    "id": "homestead", "slug": "homestead", "title": "自建房设计", "subtitle": "农村别墅 · 自建房 · 乡村住宅",
+    "description": "农村自建房与别墅一站式设计，含效果图、施工图、报建图，让乡村住宅既体面又省心落地。",
+    "heroImage": "images/villa-hero.svg",
+    "priceRange": "¥3万-30万", "avgSavings": "平均节省 ¥12万",
+    "stats": [{"value": "960+", "label": "完成项目"}, {"value": "¥1,150万", "label": "累计节省"}, {"value": "97%", "label": "满意度"}, {"value": "25天", "label": "平均工期"}],
+    "projects": [
+      {"id": "home-1", "title": "云栖·新中式农村别墅", "location": "浙江金华", "area": "380㎡", "style": "新中式", "budget": "设计费 ¥18万", "savings": "节省 ¥12万", "designer": "陈乡建", "duration": "28天", "description": "白墙黛瓦的新中式农村别墅，兼顾体面与实用，深受返乡建房业主喜爱。", "image": "images/villa.svg", "tags": ["新中式", "农村别墅", "自建房", "乡村"]},
+      {"id": "home-2", "title": "现代·极简自建房", "location": "江苏南通", "area": "320㎡", "style": "现代极简", "budget": "设计费 ¥15万", "savings": "节省 ¥9万", "designer": "林简", "duration": "22天", "description": "线条干净的现代极简自建房，大开窗引入庭院景致，造价可控。", "image": "images/villa.svg", "tags": ["现代", "极简", "自建房", "大开窗"]},
+      {"id": "home-3", "title": "欧韵·乡村双拼别墅", "location": "山东潍坊", "area": "460㎡", "style": "欧式", "budget": "设计费 ¥22万", "savings": "节省 ¥14万", "designer": "王欧", "duration": "30天", "description": "两户双拼的欧式乡村别墅，坡屋顶与拱窗凸显地域气质。", "image": "images/villa.svg", "tags": ["欧式", "双拼", "乡村别墅", "坡屋顶"]},
+      {"id": "home-4", "title": "田园·一层合院自建房", "location": "四川成都", "area": "260㎡", "style": "田园合院", "budget": "设计费 ¥12万", "savings": "节省 ¥7万", "designer": "黄院", "duration": "20天", "description": "适合养老的一层合院自建房，围合庭院安全便利，老人居住友好。", "image": "images/villa.svg", "tags": ["合院", "一层", "养老", "田园"]},
+      {"id": "home-5", "title": "滨海·度假自建宅", "location": "福建泉州", "area": "350㎡", "style": "滨海现代", "budget": "设计费 ¥20万", "savings": "节省 ¥13万", "designer": "周海", "duration": "26天", "description": "面海的度假自建宅，露台与通透立面最大化海景视野。", "image": "images/villa.svg", "tags": ["滨海", "度假", "自建房", "露台"]},
+      {"id": "home-6", "title": "民宿化·乡村自建房", "location": "安徽黄山", "area": "420㎡", "style": "徽派新解", "budget": "设计费 ¥24万", "savings": "节省 ¥15万", "designer": "胡徽", "duration": "32天", "description": "可自住可经营的民宿化自建房，马头墙意象现代演绎，兼顾接待与居住。", "image": "images/villa.svg", "tags": ["徽派", "民宿化", "自建房", "乡村"]}
+    ],
+    "seo": {
+      "metaTitle": "自建房设计_农村别墅设计效果图_乡村别墅设计图纸 | DD设计交易平台",
+      "metaKeywords": "自建房设计,农村别墅设计,农村别墅效果图,乡村别墅设计,自建房图纸,别墅设计公司,农村自建房",
+      "metaDescription": "专业农村自建房、别墅设计，含效果图、施工图、报建图一站式服务。DD设计交易平台共享资深别墅设计师，平均节省12万设计费，让乡村住宅体面落地。",
+      "intro": [
+        "回乡建一栋好房子，是很多家庭的大事。DD平台的自建房设计服务，专为农村别墅、乡村住宅量身打造：从效果图让你提前看见样子，到施工图、报建图让盖房少走弯路，一站式搞定。",
+        "我们深谙乡村建房的现实——造价可控、施工队能看懂、邻里协调。平台直连擅长自建房的别墅设计师，设计费平均节省12万，让体面与省钱兼得。"
+      ],
+      "process": [
+        {"step": "01", "title": "需求与地块", "desc": "了解家庭人口、地块尺寸与预算，明确房型与层数。"},
+        {"step": "02", "title": "效果图", "desc": "出具外观与重点空间效果图，提前确认样子。"},
+        {"step": "03", "title": "施工图报建", "desc": "结构、水电、立面全套施工图，配合报建所需图纸。"},
+        {"step": "04", "title": "施工陪跑", "desc": "关键节点答疑与现场复核，保障按图施工。"}
+      ],
+      "faq": [
+        {"q": "自建房设计包含报建图吗？", "a": "包含。我们提供报建所需的总平、立面与简要结构图，具体按当地要求调整。"},
+        {"q": "农村施工队能看懂图纸吗？", "a": "我们的施工图以清晰、可施工为导向，并可在关键节点提供答疑，降低沟通成本。"},
+        {"q": "自建房设计多少钱？", "a": "通常3万-30万，视面积与层数，平台平均可节省12万，性价比高。"}
+      ]
+    }
+  }
+]
