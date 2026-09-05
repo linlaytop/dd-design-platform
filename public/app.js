@@ -434,8 +434,18 @@ $("#videosGrid").addEventListener("click", async (e) => {
 $("#contactForm").addEventListener("submit", async (e) => {
   e.preventDefault();
   const f = e.target;
-  const r = await api("/api/contact", { method: "POST", body: { name: f.name.value.trim(), phone: f.phone.value.trim(), message: f.message.value.trim() } });
   const hint = $("#contactHint");
+
+  // 静态演示站点（GitHub Pages）没有后端，直接给友好提示，避免暴露技术性报错
+  if (window.DD_STATIC_DEMO) {
+    hint.textContent = "感谢您的咨询！演示站点暂未开启在线提交，请通过页面上的电话或微信联系我们。";
+    hint.className = "form-hint ok";
+    f.reset();
+    toast("已收到您的需求");
+    return;
+  }
+
+  const r = await api("/api/contact", { method: "POST", body: { name: f.name.value.trim(), phone: f.phone.value.trim(), message: f.message.value.trim() } });
   if (r.ok) {
     hint.textContent = r.message; hint.className = "form-hint ok";
     f.reset();

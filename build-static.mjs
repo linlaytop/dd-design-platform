@@ -66,6 +66,13 @@ function collectRoutes() {
   return routes;
 }
 
+/** 标记静态演示模式：无后端时前端降级为友好提示，避免暴露技术性报错 */
+function injectDemoFlag(html) {
+  return html.includes("</head>")
+    ? html.replace("</head>", "<script>window.DD_STATIC_DEMO=true;</script>\n</head>")
+    : html;
+}
+
 /** URL 落盘路径：/works/hotel/hotel-1 → dist/works/hotel/hotel-1/index.html */
 function outFile(route) {
   if (route === "/") return path.join(DIST, "index.html");
@@ -117,7 +124,9 @@ async function main() {
           if (skip.has(entry.name) && src === PUBLIC) continue;
           const ext = path.extname(entry.name);
           if ([".js", ".css", ".html", ".xml", ".txt", ".json"].includes(ext)) {
-            fs.writeFileSync(d, rewrite(fs.readFileSync(s, "utf8")), "utf8");
+            let code = rewrite(fs.readFileSync(s, "utf8"));
+            if (ext === ".html") code = injectDemoFlag(code);
+            fs.writeFileSync(d, code, "utf8");
           } else {
             fs.copyFileSync(s, d);
           }
@@ -138,7 +147,7 @@ async function main() {
           failed.push(`${route} (HTTP ${res.status})`);
           continue;
         }
-        const html = rewrite(await res.text());
+        const html = injectDemoFlag(rewrite(await res.text()));
         const file = outFile(route);
         fs.mkdirSync(path.dirname(file), { recursive: true });
         fs.writeFileSync(file, html, "utf8");
